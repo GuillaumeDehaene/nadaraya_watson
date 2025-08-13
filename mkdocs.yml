@@ -1,0 +1,53 @@
+site_name: nadaraya-watson
+repo_url: https://github.com/GuillaumeDehaene/nadaraya-watson
+site_url: https://GuillaumeDehaene.github.io/nadaraya-watson
+site_description: A simple implementation of the Nadaraya-Watson kernel regression estimator for usage with scikit-learn.
+site_author: Guillaume P. Dehaene
+edit_uri: edit/main/docs/
+repo_name: GuillaumeDehaene/nadaraya-watson
+copyright: Maintained by <a href="https://GuillaumeDehaene.com">GuillaumeDehaene</a>.
+
+nav:
+  - Home: index.md
+  - KernelRegressionNW: KernelRegressionNW.md
+  - kernels: kernels.md
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: ["src/nadaraya_watson"]
+          options:
+            docstring_style: numpy
+theme:
+  name: material
+  feature:
+    tabs: true
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/GuillaumeDehaene/nadaraya-watson
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
