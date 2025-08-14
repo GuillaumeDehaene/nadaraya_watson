@@ -31,9 +31,10 @@ $$
 $$
 
 where:
+
 - $K(\cdot)$ is a kernel function[^1] (e.g., Gaussian, Epanechnikov)
 - $h$ is the bandwidth parameter, controlling the width of the kernel
-- $d(x, x_i) $ is the distance between the query point $ x $ and the training point $ x_i $
+- $d(x, x_i)$ is the distance between the query point $ x $ and the training point $ x_i $
 - $x_i$ are the training points
 - $y_i$ are the corresponding target values
 - $n$ is the number of training samples
