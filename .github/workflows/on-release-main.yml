@@ -30,7 +30,7 @@ jobs:
           path: pyproject.toml
 
   deploy-docs:
-    needs: publish
+    needs: set-version
     runs-on: ubuntu-latest
     steps:
       - name: Check out
