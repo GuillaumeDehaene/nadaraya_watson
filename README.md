@@ -1,8 +1,8 @@
 # Nadaraya-watson kernel regression
 
-[![Release](https://img.shields.io/github/v/release/GuillaumeDehaene/nadaraya-watson)](https://img.shields.io/github/v/release/GuillaumeDehaene/nadaraya-watson)
-[![Build status](https://img.shields.io/github/actions/workflow/status/GuillaumeDehaene/nadaraya-watson/main.yml?branch=main)](https://github.com/GuillaumeDehaene/nadaraya-watson/actions/workflows/main.yml?query=branch%3Amain)
-[![License](https://img.shields.io/github/license/GuillaumeDehaene/nadaraya-watson)](https://img.shields.io/github/license/GuillaumeDehaene/nadaraya-watson)
+![Python Version](https://img.shields.io/badge/python-3.9--3.13-blue)
+[![License](https://img.shields.io/github/license/GuillaumeDehaene/nadaraya_watson)](https://img.shields.io/github/license/GuillaumeDehaene/nadaraya_watson)
+[![Coverage](https://codecov.io/github/GuillaumeDehaene/nadaraya_watson/graph/badge.svg?token=P4RSQBAGD4)](https://codecov.io/github/GuillaumeDehaene/nadaraya_watson)
 
 A simple implementation of the Nadaraya-Watson kernel regression estimator for usage with scikit-learn.
 
