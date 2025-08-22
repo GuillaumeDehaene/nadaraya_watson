@@ -1,6 +1,6 @@
 [project]
 name = "nadaraya-watson"
-version = "0.1.0"
+version = "0.1.1"
 description = "A simple implementation of the Nadaraya-Watson kernel regression estimator for usage with scikit-learn."
 authors = [{ name = "Guillaume P. Dehaene", email = "guillaume.dehaene@gmail.com" }]
 readme = "README.md"
@@ -23,9 +23,9 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://GuillaumeDehaene.github.io/nadaraya-watson/"
-Repository = "https://github.com/GuillaumeDehaene/nadaraya-watson"
-Documentation = "https://GuillaumeDehaene.github.io/nadaraya-watson/"
+Homepage = "https://GuillaumeDehaene.github.io/nadaraya_watson/"
+Repository = "https://github.com/GuillaumeDehaene/nadaraya_watson"
+Documentation = "https://GuillaumeDehaene.github.io/nadaraya_watson/"
 
 [dependency-groups]
 dev = [

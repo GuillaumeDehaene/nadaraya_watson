@@ -1,16 +1,17 @@
 # Nadaraya-watson kernel regression
 
-[![Release](https://img.shields.io/github/v/release/GuillaumeDehaene/nadaraya-watson)](https://img.shields.io/github/v/release/GuillaumeDehaene/nadaraya-watson)
-[![Build status](https://img.shields.io/github/actions/workflow/status/GuillaumeDehaene/nadaraya-watson/main.yml?branch=main)](https://github.com/GuillaumeDehaene/nadaraya-watson/actions/workflows/main.yml?query=branch%3Amain)
-[![License](https://img.shields.io/github/license/GuillaumeDehaene/nadaraya-watson)](https://img.shields.io/github/license/GuillaumeDehaene/nadaraya-watson)
+![Python Version](https://img.shields.io/badge/python-3.9--3.13-blue)
+[![Release](https://img.shields.io/github/v/release/GuillaumeDehaene/nadaraya_watson)](https://img.shields.io/github/v/release/GuillaumeDehaene/nadaraya_watson)
+[![License](https://img.shields.io/github/license/GuillaumeDehaene/nadaraya_watson)](https://img.shields.io/github/license/GuillaumeDehaene/nadaraya_watson)
+[![Coverage](https://codecov.io/github/GuillaumeDehaene/nadaraya_watson/graph/badge.svg?token=P4RSQBAGD4)](https://codecov.io/github/GuillaumeDehaene/nadaraya_watson)
 
 A simple implementation of the Nadaraya-Watson kernel regression estimator for usage with scikit-learn.
 
 Please note that the parameterization is slightly different from [this other library](https://github.com/jmetzen/kernel_regression). In my implementation, bandwidth is in units of distance, instead of being specific to the kernel.
 
 
-- **Github repository**: <https://github.com/GuillaumeDehaene/nadaraya-watson/>
-- **Documentation** <https://GuillaumeDehaene.github.io/nadaraya-watson/>
+- **Github repository**: <https://github.com/GuillaumeDehaene/nadaraya_watson/>
+- **Documentation** <https://GuillaumeDehaene.github.io/nadaraya_watson/>
 
 ## Table of Contents
 
@@ -58,13 +59,13 @@ Please refer to https://en.wikipedia.org/wiki/Kernel_(statistics) and https://en
 Install using `uv`, [the extremely fast Python package and project manager, written in Rust.](https://docs.astral.sh/uv/):
 
 ```bash
-uv add git+https://github.com/GuillaumeDehaene/nadaraya-watson.git
+uv add git+https://github.com/GuillaumeDehaene/nadaraya_watson.git
 ```
 
 Or using `pip`:
 
 ```bash
-pip install git+https://github.com/GuillaumeDehaene/nadaraya-watson.git
+pip install git+https://github.com/GuillaumeDehaene/nadaraya_watson.git
 ```
 
 ## Usage
@@ -81,17 +82,19 @@ y_pred = kernel_regression.predict(x_query)
 
 My recommendation is to always use cross-validation, or some other hyperparameter selection scheme,
 to find the best value of the bandwidth, kernel, metric.
+Please refer to [this example script](https://github.com/GuillaumeDehaene/nadaraya_watson/tree/main/scripts/usage.py).
 
 Please note that **bounded kernels can produce `NaN`values**.
 This is not a bug and is the expected behavior.
 If you are using a bounded kernel with a low bandwidth, then it is possible that some query points might intersect
 0 training points.
 In this case, the only reasonable prediction is to return `NaN` to represent an impossible prediction.
+Please refer to [this example script](https://github.com/GuillaumeDehaene/nadaraya_watson/tree/main/scripts/bounded_kernel_can_produce_nan.py).
 
 
 ## License
 
-Released under the MIT license.
+[Released under the MIT license](LICENSE).
 
 
 ## Development

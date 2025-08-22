@@ -1,10 +1,10 @@
-site_name: nadaraya-watson
-repo_url: https://github.com/GuillaumeDehaene/nadaraya-watson
-site_url: https://GuillaumeDehaene.github.io/nadaraya-watson
+site_name: nadaraya_watson
+repo_url: https://github.com/GuillaumeDehaene/nadaraya_watson
+site_url: https://GuillaumeDehaene.github.io/nadaraya_watson
 site_description: A simple implementation of the Nadaraya-Watson kernel regression estimator for usage with scikit-learn.
 site_author: Guillaume P. Dehaene
 edit_uri: edit/main/docs/
-repo_name: GuillaumeDehaene/nadaraya-watson
+repo_name: GuillaumeDehaene/nadaraya_watson
 copyright: Maintained by <a href="https://GuillaumeDehaene.com">GuillaumeDehaene</a>.
 
 nav:
@@ -44,7 +44,7 @@ theme:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/GuillaumeDehaene/nadaraya-watson
+      link: https://github.com/GuillaumeDehaene/nadaraya_watson
 
 markdown_extensions:
   - toc:

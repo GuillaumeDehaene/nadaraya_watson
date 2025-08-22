@@ -1,6 +1,7 @@
 # Nadaraya-watson kernel regression
 
 ![Python Version](https://img.shields.io/badge/python-3.9--3.13-blue)
+[![Release](https://img.shields.io/github/v/release/GuillaumeDehaene/nadaraya_watson)](https://img.shields.io/github/v/release/GuillaumeDehaene/nadaraya_watson)
 [![License](https://img.shields.io/github/license/GuillaumeDehaene/nadaraya_watson)](https://img.shields.io/github/license/GuillaumeDehaene/nadaraya_watson)
 [![Coverage](https://codecov.io/github/GuillaumeDehaene/nadaraya_watson/graph/badge.svg?token=P4RSQBAGD4)](https://codecov.io/github/GuillaumeDehaene/nadaraya_watson)
 
@@ -9,8 +10,8 @@ A simple implementation of the Nadaraya-Watson kernel regression estimator for u
 Please note that the parameterization is slightly different from [this other library](https://github.com/jmetzen/kernel_regression). In my implementation, bandwidth is in units of distance, instead of being specific to the kernel.
 
 
-- **Github repository**: <https://github.com/GuillaumeDehaene/nadaraya-watson/>
-- **Documentation** <https://GuillaumeDehaene.github.io/nadaraya-watson/>
+- **Github repository**: <https://github.com/GuillaumeDehaene/nadaraya_watson/>
+- **Documentation** <https://GuillaumeDehaene.github.io/nadaraya_watson/>
 
 ## Table of Contents
 
@@ -58,13 +59,13 @@ Please refer to https://en.wikipedia.org/wiki/Kernel_(statistics) and https://en
 Install using `uv`, [the extremely fast Python package and project manager, written in Rust.](https://docs.astral.sh/uv/):
 
 ```bash
-uv add git+https://github.com/GuillaumeDehaene/nadaraya-watson.git
+uv add git+https://github.com/GuillaumeDehaene/nadaraya_watson.git
 ```
 
 Or using `pip`:
 
 ```bash
-pip install git+https://github.com/GuillaumeDehaene/nadaraya-watson.git
+pip install git+https://github.com/GuillaumeDehaene/nadaraya_watson.git
 ```
 
 ## Usage
