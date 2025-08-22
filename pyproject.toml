@@ -1,6 +1,6 @@
 [project]
 name = "nadaraya-watson"
-version = "0.0.1"
+version = "0.1.0"
 description = "A simple implementation of the Nadaraya-Watson kernel regression estimator for usage with scikit-learn."
 authors = [{ name = "Guillaume P. Dehaene", email = "guillaume.dehaene@gmail.com" }]
 readme = "README.md"
